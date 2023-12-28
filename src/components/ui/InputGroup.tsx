@@ -23,7 +23,7 @@ export default function InputGroup({
           onChange={(event) => onChange(event.target.value, event.target.name)}
           rows={3}
           name={name}
-          className="rounded-md border-b-4 bg-stone-100 px-2 py-1 text-stone-700 focus:border-b-stone-700 focus:outline-none"
+          className="whitespace-pre-line rounded-md border-b-4 bg-stone-100 px-2 py-1 text-stone-700 focus:border-b-stone-700 focus:outline-none"
         />
       </div>
     );

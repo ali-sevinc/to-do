@@ -6,7 +6,7 @@ export default function TaskItem({
   onRemove: () => void;
 }) {
   return (
-    <li className="flex items-center justify-between p-1">
+    <li className="flex items-center justify-between px-1 py-2">
       {task}
       <button onClick={onRemove} className="hover:text-red-500">
         Delete

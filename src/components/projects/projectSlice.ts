@@ -1,21 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
-const DUMMY_PROJECTS = [
-  {
-    id: "p1",
-    title: "Learn React",
-    description: "Follow courses, do practice",
-    date: "01-21-2024",
-    tasks: [],
-  },
-  {
-    id: "p2",
-    title: "Make Projects",
-    description: "Your projects don't have to be original. You do your best!",
-    date: "01-21-2024",
-    tasks: [],
-  },
-];
 
 type Task = { taskId: string; task: string };
 type Project = {
@@ -25,6 +9,24 @@ type Project = {
   date: string;
   tasks: Task[];
 };
+
+const DUMMY_PROJECTS: Project[] = [
+  {
+    id: "p1",
+    title: "Learn React",
+    description: "Follow courses, do practice",
+    date: "01-21-2024",
+    tasks: [{ taskId: "task1", task: "task-1" }],
+  },
+  {
+    id: "p2",
+    title: "Make Projects",
+    description:
+      "Your projects don't have to be original. \n You do your best!",
+    date: "01-21-2024",
+    tasks: [],
+  },
+];
 
 export interface ProjectSlice {
   projects: Project[];

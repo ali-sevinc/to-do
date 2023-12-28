@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
+import { RootState } from "../../store/store";
 
 import Project from "./Project";
-import { RootState } from "../../store/store";
 
 export default function Projects({
   onSelect,
